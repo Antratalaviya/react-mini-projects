@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import './App.css'
+import { HomeIcon } from './assets/Icon';
 
 function App() {
 
@@ -40,11 +41,13 @@ function App() {
     <>
       <div className='w-full h-screen bg-black/90 flex justify-center p-5'>
         <div className='h-1/2 w-1/2 bg-black/95 text-center rounded-lg'>
-          <h1 className='p-4 font-semibold text-2xl text-orange-600'>Password generator</h1>
+          <h1 className='p-4 font-semibold text-2xl text-orange-600'>
+            Password generator
+          </h1>
           <div className='flex overflow-hidden rounded-lg m-3 font-semibold'>
             <input
               type="text"
-              className='outline-none w-full py-1 px-3' 
+              className='outline-none w-full py-1 px-3'
               value={password}
               readOnly
               ref={passRef}
@@ -96,3 +99,5 @@ function App() {
 }
 
 export default App
+
+
